@@ -25,5 +25,6 @@ const config: Config = {
     },
   },
   plugins: [],
+  purge: ['./pages/**/*.tsx', './components/**/*.tsx']
 };
 export default config;
