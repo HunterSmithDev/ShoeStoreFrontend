@@ -12,6 +12,16 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+
+      boxShadow: {
+        'left-side': '-5px 0px 10px rgba(0, 0, 0, 0.1)', // Custom left-side shadow
+      },
+      fontSize: {
+        'dynamic': 'clamp(.9rem, .9vw, 1rem)', // Add custom font size using clamp
+      },
+      animation: {
+        fadeIn: 'fadeIn 0.1s ease-in-out',
+      },
     },
   },
   plugins: [],
