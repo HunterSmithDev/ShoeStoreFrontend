@@ -8,11 +8,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
-
       boxShadow: {
         'left-side': '-5px 0px 10px rgba(0, 0, 0, 0.1)', // Custom left-side shadow
       },
@@ -24,7 +19,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
-  purge: ['./pages/**/*.tsx', './components/**/*.tsx']
+  plugins: []
 };
 export default config;
