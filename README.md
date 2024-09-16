@@ -1,6 +1,6 @@
-##Shoe Store Demo
+Shoe Store Demo
 
-##Link to site: [[https://shoe-store-frontend-nt4l.vercel.app/]]
+Link to site: [[https://shoe-store-frontend-nt4l.vercel.app/]]
 
 This is a project I built in a weekend to show my speed and capability to develop websites. 
 The frontend is NextJs/React with TailwindCSS. 
