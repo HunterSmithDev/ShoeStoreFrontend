@@ -40,7 +40,7 @@ const Navbar: React.FC  = () => {
   return (
     <>
         {/* Desktop View */}
-        <section id="desktop" className='hidden md:block md:sticky md:top-0 md:bg-white z-40 drop-shadow-sm'>
+        <section id="desktop" className='hidden md:block md:sticky md:top-0 md:bg-white z-40 drop-shadow-sm text-black'>
             <div  className='grid grid-cols-3 p-4'>
                 <h1 className='text-2xl font-bold'>
                     <a href='/'>Shoe Store</a>
@@ -70,9 +70,9 @@ const Navbar: React.FC  = () => {
         </section>
 
         {/* Mobile View */}
-        <section id="mobile" className="md:hidden sticky top-0 md:bg-transparent bg-white z-30">
+        <section id="mobile" className="md:hidden sticky top-0 md:bg-transparent bg-white text-black z-30">
             <div className={`flex relative p-4 items-center`}>
-                <h1 className="text-2xl font-bold">Shoe Store</h1>
+                <h1 className="text-2xl font-bold ">Shoe Store</h1>
                 <div className="flex absolute right-16" >
                     <LiaShoppingBagSolid className="text-2xl font-semibold" onClick={() => setCartOpen(true)}/>
                     {cart.length > 0 && <div className='w-2 h-2 absolute bg-red-500 rounded-full right-0'/>}
@@ -89,7 +89,7 @@ const Navbar: React.FC  = () => {
                 onClick={() => setMobileMenuOpened(false)}  // Clicking the overlay will close the menu
             ></div>
 
-            <div className={`fixed top-0 right-0 w-3/5 h-screen bg-white transform transition-transform duration-300 ease-in-out z-40 ${isMobileMenuOpened ? "translate-x-0" : "translate-x-full"}`}>
+            <div className={`fixed top-0 right-0 w-3/5 h-screen bg-white text-black transform transition-transform duration-300 ease-in-out z-40 ${isMobileMenuOpened ? "translate-x-0" : "translate-x-full"}`}>
                 <div className="w-full flex justify-end px-6 py-4">
                 <button className="text-3xl" onClick={() => setMobileMenuOpened(false)}>
                     <IoClose />
