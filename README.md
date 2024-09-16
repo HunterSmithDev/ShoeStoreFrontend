@@ -6,3 +6,5 @@ It has a backend api developeed with Python/Flask that delivers the products whe
 
 This website isn't perfect but it has the core logic of an ecommerce site. except the checkout peice. 
 I will continue to update this website in the future to add new functionality like checking out. ofcourse without a real transactions.
+
+find the backened repo here [[https://github.com/HunterSmithDev/ShoeStoreBackend]]
