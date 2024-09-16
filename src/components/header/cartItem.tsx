@@ -22,7 +22,7 @@ const CartItem = () => {
         <div className=''>
         {cart.map(product => {
             return (
-                    <div className='my-2'>
+                    <div key={product.id} className='my-2'>
                         <div className='grid grid-cols-2 gap-y-2 items-center bg-slate-100 p-2'>
                             <Image src={`${product.image}`} alt="Shoes" width={100} height={100} />
                             <div>

@@ -1,6 +1,7 @@
 
 import React from 'react'
 
+
 import Products from '@/components/products/products'
 
 interface Product {
@@ -14,7 +15,7 @@ interface Product {
 }
 
 async function fetchProducts(): Promise<Product[]> {
-  const response = await fetch('http://104.151.238.183/products', {
+  const response = await fetch(`${process.env.BACKEND_URL}/products`, {
     cache: 'no-store', // Ensure the data is fresh (equivalent to SSR)
   })
   if (!response.ok) {

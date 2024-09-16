@@ -21,10 +21,10 @@ interface Product {
 
 const Products: React.FC<ProductProps> = ({products}: ProductProps) => {
     const [isFilteredProducts, setFilteredProducts] = useState<Product[]>([])
-    const [order, setOrder] = useState<String>('')
-    const [isCategory, setCategory] = useState<String>('all')
+    const [order, setOrder] = useState<string>('')
+    const [isCategory, setCategory] = useState<string>('all')
     const [selectedProduct, setSelectedProduct] = useState<Product>()
-    const [isProductViewOpened, setProductViewOpened] = useState<Boolean>(false)
+    const [isProductViewOpened, setProductViewOpened] = useState<boolean>(false)
 
     useEffect(() => {
         setFilteredProducts(products)
@@ -46,7 +46,7 @@ const Products: React.FC<ProductProps> = ({products}: ProductProps) => {
 
 
 
-    const filterByPrice = (products: Product[], order: String): Product[] => {
+    const filterByPrice = (products: Product[], order: string): Product[] => {
         // Make a shallow copy of the array to avoid mutating the original array
         const sortedProducts = [...products];
     
@@ -68,7 +68,7 @@ const Products: React.FC<ProductProps> = ({products}: ProductProps) => {
         return sortedProducts;
     };
 
-    const filterProducts = (products: Product[], category: String, order: String) => {
+    const filterProducts = (products: Product[], category: string, order: string) => {
         let filteredProducts: Product[] = [...products]
         if(category !== 'all'){
             filteredProducts = filteredProducts.filter((product) => {
@@ -91,7 +91,7 @@ const Products: React.FC<ProductProps> = ({products}: ProductProps) => {
     <>
         {isProductViewOpened && (<div className="fixed inset-0 bg-black bg-opacity-50 z-50" onClick={() => setProductViewOpened(false)}/>)}
         <div className='bg-slate-100 min-h-screen relative'> 
-            <div id='filter' className="md:flex p-2 md:items-center mx-2">
+            <div id='filter' className="md:flex p-2 md:items-center bg-white px-4">
                 <h1 className='font-semibold mb-1'>Filter:</h1>
                 <div className='flex md:mb-0 mb-2 h-full items-center'>
                     <div className='lg:mx-4 flex items-center h-full'>
@@ -118,7 +118,7 @@ const Products: React.FC<ProductProps> = ({products}: ProductProps) => {
             
             <div className="grid 2xl:grid-cols-10 lg:grid-cols-8 md:grid-cols-5 grid-cols-2 gap-4 p-4 justify-center ">
                 {isFilteredProducts.map((product) => (
-                <div className="bg-white flex flex-cols justify-center mx-auto" 
+                <div key={product.id} className="bg-white flex flex-cols justify-center mx-auto" 
                     onClick={() => {
                         setSelectedProduct(product)
                         setProductViewOpened(true)
