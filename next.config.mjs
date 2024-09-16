@@ -11,6 +11,11 @@ const nextConfig = {
             protocol: 'https',
             hostname: 'images.vans.com',
             port: '',
+          },
+          {
+            protocol: 'https',
+            hostname: 'sccy794tycp3utm5.public.blob.vercel-storage.com',
+            port: '',
           }
         ],
       },

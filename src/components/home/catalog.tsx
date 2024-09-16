@@ -7,12 +7,12 @@ const Catalog = () => {
     const [isHovered, setHovered] = useState<number | null >(null)
 
     const images = [
-        {image1: '/./Assets/images/home/WMNS+AIR+JORDAN+1+MID.jpg', image2: '/./Assets/images/home/WMNS+AIR+JORDAN+1+MID+2.jpg', product: 'Air Jordan 1 Mid'},
-        {image1: '/./Assets/images/home/NIKE+SB+DUNK+LOW+PRO.jpg', image2: '/./Assets/images/home/NIKE+SB+DUNK+LOW+PRO+2.jpg', product: 'Nike SB Dunk Low Pro'},
-        {image1: '/./Assets/images/home/NIKE+ZOOM+PEGASUS+41+CHIEFS.png', image2: '/./Assets/images/home/NIKE+ZOOM+PEGASUS+41+CHIEFS+2.png', product: 'Nike Pegasus 41 NFL Kansas City Chiefs'},
-        {image1: '/./Assets/images/home/G.T.+CUT+3+OLY.jpg', image2: '/./Assets/images/home/G.T.+CUT+3+OLY+2.png', product: 'Nike G.T. Cut 3 Electric'},
-        {image1: '/./Assets/images/home/AIR+JORDAN+1+RETRO+HIGH+OG.jpg', image2: '/./Assets/images/home/AIR+JORDAN+1+RETRO+HIGH+OG+2.jpg', product: 'Air Jordan 1 Retro High OG "Midnight Navy"'},
-        {image1: '/./Assets/images/home/AIR+JORDAN+1+MID.jpg' , image2: '/./Assets/images/home/AIR+JORDAN+1+MID+2.jpg', product: 'Air Jordan 1 Mid'}
+        {image1: 'https://sccy794tycp3utm5.public.blob.vercel-storage.com/home/AIR+JORDAN+1+MID-R3RzBrgfqGpPYEWID4SGC6sM4cAZ7b.jpg', image2: 'https://sccy794tycp3utm5.public.blob.vercel-storage.com/home/AIR+JORDAN+1+MID+2-dnQ7fpcf78vCS7Sn5dABREmbCwkjxP.jpg', product: 'Air Jordan 1 Mid'},
+        {image1: 'https://sccy794tycp3utm5.public.blob.vercel-storage.com/home/NIKE+SB+DUNK+LOW+PRO-nLPwiQLCvnJwf2sZX2CjYMChdfrzK7.jpg', image2: 'https://sccy794tycp3utm5.public.blob.vercel-storage.com/home/NIKE+SB+DUNK+LOW+PRO+2-neQtKW7BM2dDh9t2UaEQYNpAwxGlKF.jpg', product: 'Nike SB Dunk Low Pro'},
+        {image1: 'https://sccy794tycp3utm5.public.blob.vercel-storage.com/home/NIKE+ZOOM+PEGASUS+41+CHIEFS-a3QzOpGHpi6gy8BBPNcnPs91KzSR4P.png', image2: 'https://sccy794tycp3utm5.public.blob.vercel-storage.com/home/NIKE+ZOOM+PEGASUS+41+CHIEFS+2-Da9cEf94FrTUOv2pd6tHgAw7riDJUM.png', product: 'Nike Pegasus 41 NFL Kansas City Chiefs'},
+        {image1: 'https://sccy794tycp3utm5.public.blob.vercel-storage.com/home/G.T.+CUT+3+OLY-HXNMNpV2IG4XdvDox9BlzAKFXbepTB.jpg', image2: 'https://sccy794tycp3utm5.public.blob.vercel-storage.com/home/G.T.+CUT+3+OLY+2-QfFSARhZy3sV8R625nMaIYJdvV9RT9.png', product: 'Nike G.T. Cut 3 Electric'},
+        {image1: 'https://sccy794tycp3utm5.public.blob.vercel-storage.com/home/AIR+JORDAN+1+RETRO+HIGH+OG-sSREcqjAv6zOWWk4FfLxo8vbz2IVN7.jpg', image2: 'https://sccy794tycp3utm5.public.blob.vercel-storage.com/home/AIR+JORDAN+1+RETRO+HIGH+OG+2-OhzTFeGi2QQDguq4Fc7P5JSpqCZ1TU.jpg', product: 'Air Jordan 1 Retro High OG "Midnight Navy"'},
+        {image1: 'https://sccy794tycp3utm5.public.blob.vercel-storage.com/home/WMNS+AIR+JORDAN+1+MID-x33NcJLHWCMZglwKZCxQ1EMvCtvEtZ.jpg' , image2: 'https://sccy794tycp3utm5.public.blob.vercel-storage.com/home/WMNS+AIR+JORDAN+1+MID+2-STTiNzoTHZSi6DIwULnnq3f9K1Huxo.jpg', product: 'Air Jordan 1 Mid'}
     ]
 
   return (

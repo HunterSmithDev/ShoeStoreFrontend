@@ -21,7 +21,7 @@ export default function Home() {
             </a>
           </div>
         </section>
-        <Featured image1='/./Assets/images/home/nike_durant_KD15.jpg' image2='/./Assets/images/home/VANS_SUEDE_CANVAS_OG_OLD_SKOOL_DUSTY_OLIVE_FEATURE.jpg'/>
+        <Featured image1='https://sccy794tycp3utm5.public.blob.vercel-storage.com/home/nike_durant_KD15-xdQWGlm3oIkzzZIuDjkvG6EpKhVrP6.jpg' image2='https://sccy794tycp3utm5.public.blob.vercel-storage.com/home/VANS_SUEDE_CANVAS_OG_OLD_SKOOL_DUSTY_OLIVE_FEATURE-FrAlCx7pYu0EodRISrvsomH5rYbDHh.jpg'/>
         <Catalog/>
       </section>
     </>

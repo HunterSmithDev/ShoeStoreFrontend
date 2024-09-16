@@ -11,7 +11,7 @@ const Page: React.FC = () => {
             I hope you find this website interesting because I had alot of fun building it.. <br/><br/> Check out my Github Repository in the footer!</p>
         </div>
         <div className='md:w-1/5 w-2/4 mx-auto'>
-          <Image src='/./Assets/images/about/W+NIKE+AIR+MAX+1.png' alt="W Nike Air Max 1" width={1000} height={100} />
+          <Image src='https://sccy794tycp3utm5.public.blob.vercel-storage.com/about/W+NIKE+AIR+MAX+1-W27nYpBAHHTKiCTFfuOT7uqLsK0WQW.png' alt="W Nike Air Max 1" width={1000} height={100} />
         </div>
       </div>
     </>
