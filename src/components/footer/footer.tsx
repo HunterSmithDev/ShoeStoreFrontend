@@ -10,7 +10,7 @@ const Footer = () => {
           You can find the GitHub repository at the link below.
         </p>
         <a
-          href="https://github.com/HunterSmithDev/ShoeStore"
+          href="https://github.com/HunterSmithDev/ShoeStoreFrontend"
           className="underline hover:text-gray-400"
         >
           Link to GitHub Repository
